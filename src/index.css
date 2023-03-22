@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+body {
+  @apply leading-[normal] m-0;
+}
+
+a {
+  color: #ffffff;
+}
+
+.bg-linear-gradient {
+  background: linear-gradient(
+    102.92deg,
+    #1b004e 16.54%,
+    #72068f 65.06%,
+    #4e0e8b 85.68%
+  );
+}
+
+.bottom-border::after {
+  content: "";
+  position: absolute;
+  top: -1.5px;
+  right: -1.5px;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.border-with-circles::before {
+  content: "";
+  position: absolute;
+  top: -250px;
+  right: 0;
+  width: 1px;
+  height: 250px;
+  background: #ffffff;
+}
+.border-with-circles::after {
+  content: "";
+  position: absolute;
+  top: -251.5px;
+  right: -1.5px;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.center-circle::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -3.5px;
+  width: 6px;
+  height: 6px;
+  background: #c637a0;
+  border-radius: 50%;
+}
+
+.left-circle::after {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  right: -1.5px;
+  width: 6px;
+  height: 6px;
+  background: #c637a0;
+  border-radius: 50%;
+}
+
+.right-circle::after {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: -1.5px;
+  width: 6px;
+  height: 6px;
+  background: #c637a0;
+  border-radius: 50%;
+}
+
+.line-with-circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 1px;
+  background: #ffffff;
+}
+.line-with-circle::after {
+  content: "";
+  position: absolute;
+  top: -1.5px;
+  right: 210px;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+}
